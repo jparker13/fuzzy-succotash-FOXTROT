@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color: #005cff;
+}
+
+.bg {
+  min-height: 100%;
+  position: relative;
+}
+
+.sparkle {
+  position: absolute;
+  background-color: var(--color);
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  filter: blur(1px);
+  animation: move 5s ease-in-out;
+}
+
+@keyframes move {
+  0% {
+      opacity: 0;
+      transform: translate(0, 100%);
+  }
+
+  50% {
+      opacity: 1;
+      transform: translate(500%, -100%);
+  }
+
+  100% {
+      opacity: 0;
+      transform: translate(1000%, 100%);
+  }
+}
+
+.maintxt {
+  position: relative;
+}
+.maintxt > img,
+.overlay-text {
+  position: absolute;
+}
+
+.img {
+  width: 255px;
+}
+
+h1 {
+font-weight: bold;
+color: black;
+font-size: 32px;
+text-align: center;
+
+}
+
+h2 {
+position:relative;
+top:0px;
+left:30px;
+} 
+
